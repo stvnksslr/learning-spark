@@ -12,7 +12,11 @@ version := "0.1"
 javacOptions ++= Seq("-source", "1.8")
 
 // library dependencies
-libraryDependencies += "com.sparkjava" % "spark-core" % "2.3"
+libraryDependencies ++= Seq(
+	"com.sparkjava" % "spark-core" % "2.3",
+	"log4j" % "log4j" % "1.2.17",
+	"org.codehaus.jackson" % "jackson-core-asl" % "1.9.13"
+	)
 
 // Do not append Scala versions to the generated artifacts
 crossPaths := false

@@ -50,6 +50,7 @@ sftp-config.json
 ### Scala template
 *.class
 *.log
+log4j
 
 # sbt specific
 .cache
